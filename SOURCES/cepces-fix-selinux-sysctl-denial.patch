@@ -27,5 +27,5 @@ index 63da747..a894888 100644
 
  allow certmonger_t kernel_t:system module_request;
 +allow certmonger_t sysctl_net_t:dir search;
-+allow certmonger_t sysctl_net_t:file read;
++allow certmonger_t sysctl_net_t:file { read open };
  allow certmonger_t ldconfig_exec_t:file { read execute open execute_no_trans };
